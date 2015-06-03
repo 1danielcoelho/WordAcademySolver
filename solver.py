@@ -113,7 +113,7 @@ class Graph:
             return
 
         if length_left is 0:
-            if current_word in wordlist:
+            if current_word in wordlist and current_word not in words:
                 words.append(current_word)
             else:
                 return
